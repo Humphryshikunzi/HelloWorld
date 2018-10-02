@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="HelloWorld.TableView">
+    <ContentPage.Content>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <TextCell Text="Name" Detail="Humphry"/>
+                    <EntryCell Label="Phone Number" Placeholder="Number"/>
+                    <SwitchCell Text="Receive notifications" On="True"/>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="13,0">
+                            <Label Text="Start" />
+                            <DatePicker Date="{x:Static sys:DateTime.Today}" HorizontalOptions="EndAndExpand" />
+                            <Button Text="Next" TextColor="Blue" Clicked="Button_OnClicked"></Button>
+                            <Button Text="Back" TextColor="Black" Clicked="Button_OnClicked"></Button>
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        
+    </ContentPage.Content>
+</ContentPage>

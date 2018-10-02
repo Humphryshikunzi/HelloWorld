@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.AbsoluteLayout"
+             Padding="0,20,0,0">
+    <AbsoluteLayout >
+        <BoxView BackgroundColor="Aqua"
+                 AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+        <BoxView BackgroundColor="White"
+                 AbsoluteLayout.LayoutBounds="0.5,0.2,100,100" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Button  BackgroundColor="Silver" Text="Get started" TextColor="White"
+                 AbsoluteLayout.LayoutBounds="0,1,1,50"  AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+        
+        <Button Text="Next" TextColor="Black" Clicked="Button_OnClicked1"></Button>
+    </AbsoluteLayout>
+   
+</ContentPage>

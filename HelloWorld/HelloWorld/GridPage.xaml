@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0,20,0,0"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.GridPage"
+             NavigationPage.HasBackButton="False"
+             
+             Title="GridPage">
+  
+        <Grid BackgroundColor="Yellow" RowSpacing="13" ColumnSpacing="13">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="**"></RowDefinition>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="**"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Label 1" BackgroundColor="Silver" ></Label>
+            <Label Grid.Row="0" Grid.Column="1" Text="Label 2" BackgroundColor="Silver"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Text="Label 3" BackgroundColor="Silver"></Label>
+            <Label Grid.Row="1" Grid.Column="1" Text="Label 4" BackgroundColor="Silver"></Label>
+        
+            <Button Grid.Row="3" Grid.ColumnSpan="2" Text="Next" Clicked="Button_Clicked" TextColor="Blue"></Button>
+        
+
+
+    </Grid>
+   
+        
+   
+   
+
+</ContentPage>

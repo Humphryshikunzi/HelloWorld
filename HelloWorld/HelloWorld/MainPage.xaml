@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             NavigationPage.HasBackButton="False"
+             Title="Welcome Humphry"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloWorld"
+             x:Class="HelloWorld.MainPage">
+
+    <StackLayout BackgroundColor="Green"   >
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms Humphry !"/>
+
+        <Label Text="SliderValue" TextColor="Orange" 
+                x:Name="label"></Label>
+        <Slider ValueChanged="Slider_ValueChanged" 
+                 x:Name="slider" Minimum=" 0" Maximum="100" Value="10"></Slider>
+        
+        <Button Text="Vaue" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Button_OnClicked" ></Button>
+        <Button Text="Next" TextColor="Blue" Clicked="Button_OnClicked1"></Button>
+        <Button Text="Back" TextColor="Black" Clicked="Button_OnClicked2"></Button>
+
+    </StackLayout>
+
+</ContentPage>

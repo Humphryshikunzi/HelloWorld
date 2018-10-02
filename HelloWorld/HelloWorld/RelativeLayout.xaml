@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.RelativeLayout "
+             Padding="0,20,0,0">
+    <RelativeLayout>
+        <BoxView BackgroundColor="Aqua" x:Name="banner"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Width,
+            Factor=1}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,
+            Property=Height,
+            Factor=0.3}"/>
+        <BoxView BackgroundColor="Silver"
+                 RelativeLayout.YConstraint="{ConstraintExpression
+            Type=RelativeToView,
+            ElementName=banner,
+            Property=Height,
+            Factor=1,
+            Constant=20}"/>
+        <Button Text="Next" TextColor="Blue" Clicked="Button_OnClicked"/>
+            
+            
+
+    </RelativeLayout>
+    
+
+</ContentPage>
